@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import subsidiesData from '../../data/subsidies.json';
 import newsData from '../../data/news.json';
 import {
@@ -147,15 +148,13 @@ const SubsidyCard = ({ item }: { item: Subsidy }) => {
           <span className="text-gray-400 font-medium">지원혜택</span>
           <span className="text-blue-600 font-bold truncate max-w-[60%] text-right">{item.amount_text}</span>
         </div>
-        <a
-          href={item.official_link}
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          href={`/money/${item.id}`}
           className="mt-4 w-full flex items-center justify-center space-x-1 bg-gray-50 hover:bg-blue-50 text-gray-600 hover:text-blue-600 font-bold py-3 rounded-xl transition-colors text-sm"
         >
           <span>자세히 보기</span>
           <ChevronRight className="w-4 h-4" />
-        </a>
+        </Link>
       </div>
     </div>
   );
