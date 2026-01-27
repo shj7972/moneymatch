@@ -1,0 +1,450 @@
+[
+  {
+    "id": "youth_leap",
+    "title": "청년도약계좌",
+    "category": "청년 / 금융",
+    "tags": [
+      "만19-34세",
+      "소득조건",
+      "자산형성"
+    ],
+    "summary": "5년간 매월 70만원 한도로 적금 납입 시 최대 5,000만원 목돈 마련 지원",
+    "target_text": "만 19~34세 청년, 개인소득 7,500만원 이하 및 가구소득 중위 180% 이하",
+    "amount_text": "정부기여금 월 최대 2.4만원 + 비과세 혜택 + 은행 이자",
+    "official_link": "https://ylaccount.kinfa.or.kr/"
+  },
+  {
+    "id": "youth_job_leap",
+    "title": "청년일자리 도약 장려금",
+    "category": "청년 / 취업",
+    "tags": [
+      "중소기업",
+      "취업지원",
+      "장려금"
+    ],
+    "summary": "취업애로청년을 정규직으로 채용한 중소기업에 인건비 지원",
+    "target_text": "5인 이상 우선지원 대상기업, 취업애로청년 채용 시",
+    "amount_text": "청년 1인당 월 최대 60만원, 최장 1년간 지원 (최대 720만원)",
+    "official_link": "https://www.work24.go.kr/"
+  },
+  {
+    "id": "k_pass",
+    "title": "K-패스 (청년)",
+    "category": "청년 / 교통",
+    "tags": [
+      "교통비",
+      "환급",
+      "대중교통"
+    ],
+    "summary": "월 15회 이상 대중교통 이용 시 지출금액의 30%를 환급 (청년 우대)",
+    "target_text": "만 19세~34세 청년, 월 15회 이상 대중교통 이용자",
+    "amount_text": "대중교통비의 30% 환급 (일반 20%, 저소득 53%)",
+    "official_link": "https://korea-pass.kr/"
+  },
+  {
+    "id": "youth_housing_dream",
+    "title": "청년주택드림 청약통장",
+    "category": "청년 / 주거",
+    "tags": [
+      "청약",
+      "내집마련",
+      "저금리대출"
+    ],
+    "summary": "최대 연 4.5% 금리 적용 청약통장 및 당첨 시 분양가 80% 저리 대출 연계",
+    "target_text": "만 19~34세 무주택자, 연소득 5,000만원 이하 (가입요건)",
+    "amount_text": "최대 연 4.5% 이자 + 납입금액 40% 소득공제 + 대출 연계",
+    "official_link": "https://nhuf.molit.go.kr/"
+  },
+  {
+    "id": "youth_rent_support",
+    "title": "청년월세 특별지원",
+    "category": "청년 / 주거",
+    "tags": [
+      "월세",
+      "1인가구",
+      "주거급여제외"
+    ],
+    "summary": "경제적 어려움을 겪는 청년층에게 월세 비용을 한시적(최대 12개월)으로 지원",
+    "target_text": "만 19~34세 부모님과 별도 거주 무주택 청년 (소득/자산 기준 충족)",
+    "amount_text": "월 최대 20만원, 최대 12개월 지원",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "army_savings",
+    "title": "장병내일준비적금",
+    "category": "청년 / 국방",
+    "tags": [
+      "군인",
+      "목돈",
+      "매칭지원금"
+    ],
+    "summary": "군 복무 기간 중 급여 적립 시 은행 기본금리에 정부 매칭지원금 추가 지급",
+    "target_text": "현역병, 상근예비역, 의무경찰 등 복무 중인 장병",
+    "amount_text": "은행 금리(5% 수준) + 정부 매칭지원금(원리금의 100% 매칭), 전역 시 목돈 마련",
+    "official_link": "https://www.mnd.go.kr/"
+  },
+  {
+    "id": "national_scholarship",
+    "title": "국가장학금 (I유형)",
+    "category": "청년 / 교육",
+    "tags": [
+      "대학생",
+      "등록금",
+      "소득연계"
+    ],
+    "summary": "소득 수준에 연계하여 경제적으로 어려운 학생들에게 등록금 지원",
+    "target_text": "국내 대학 재학생 중 학자금 지원 8~9구간 이하",
+    "amount_text": "소득구간별 학기당 175만원 ~ 전액 지원",
+    "official_link": "https://www.kosaf.go.kr/"
+  },
+  {
+    "id": "parental_benefit",
+    "title": "부모급여",
+    "category": "육아 / 현금",
+    "tags": [
+      "0-1세",
+      "보편지급",
+      "양육비"
+    ],
+    "summary": "출산 초기 양육 부담 경감을 위해 0~1세 아동 가정에 매월 현금 지급",
+    "target_text": "만 0세(0~11개월), 만 1세(12~23개월) 아동을 둔 가정",
+    "amount_text": "만 0세 월 100만원, 만 1세 월 50만원 지급",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "first_meeting",
+    "title": "첫만남이용권",
+    "category": "육아 / 바우처",
+    "tags": [
+      "출산축하금",
+      "국민행복카드",
+      "일시급"
+    ],
+    "summary": "출생 초기 아동 양육에 따른 경제적 부담 경감을 위한 바우처 지급",
+    "target_text": "출생 신고된 모든 아동 (소득 무관)",
+    "amount_text": "첫째 200만원, 둘째 이상 300만원 (국민행복카드 포인트)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "child_allowance",
+    "title": "아동수당",
+    "category": "육아 / 현금",
+    "tags": [
+      "8세미만",
+      "보편복지",
+      "월10만원"
+    ],
+    "summary": "아동 양육에 따른 부담 경감 및 아동의 기본적 권리와 복지 증진",
+    "target_text": "만 8세 미만 모든 아동 (취학 여부 무관)",
+    "amount_text": "아동 1인당 월 10만원 현금 지급",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "parental_leave_benefit",
+    "title": "육아휴직 급여 (6+6)",
+    "category": "육아 / 고용",
+    "tags": [
+      "휴직급여",
+      "상한액인상",
+      "맞돌봄"
+    ],
+    "summary": "부모가 함께 육아휴직 사용 시 급여 상한액 인상 (6+6 부모육아휴직제)",
+    "target_text": "남녀 고용평등법상 육아휴직을 부여받은 고용보험 가입자",
+    "amount_text": "통상임금의 80%(상한 150만원), 6+6 적용 시 최대 월 450만원 등",
+    "official_link": "https://www.ei.go.kr/"
+  },
+  {
+    "id": "neulbom_school",
+    "title": "늘봄학교",
+    "category": "육아 / 교육",
+    "tags": [
+      "초등돌봄",
+      "방과후",
+      "무상"
+    ],
+    "summary": "초등학교 방과 후 돌봄과 교육을 통합적으로 제공하는 서비스",
+    "target_text": "초등학생 희망자 (1학년 우선 시행 후 전체 확대 예정)",
+    "amount_text": "최장 저녁 8시까지 돌봄 제공, 1학년 1일 2시간 맞춤형 무료",
+    "official_link": "https://www.moe.go.kr/"
+  },
+  {
+    "id": "infertility_support",
+    "title": "난임시술비 지원",
+    "category": "육아 / 의료",
+    "tags": [
+      "난임부부",
+      "체외수정",
+      "인공수정"
+    ],
+    "summary": "난임 부부의 경제적 부담을 덜기 위해 시술비 일부 지원",
+    "target_text": "난임부부 (대부분 지자체 소득기준 폐지 추세)",
+    "amount_text": "시술 종류별 30~110만원 차등 지원 (횟수 제한 있음)",
+    "official_link": "https://www.childcare.go.kr/"
+  },
+  {
+    "id": "high_risk_pregnancy",
+    "title": "고위험 임산부 의료비 지원",
+    "category": "육아 / 의료",
+    "tags": [
+      "임신부",
+      "입원치료",
+      "소득폐지"
+    ],
+    "summary": "19대 고위험 임신 질환으로 입원 치료받은 임산부의 비급여 의료비 지원",
+    "target_text": "조기진통, 분만출혈 등 19대 고위험 임신 질환 진단 임산부",
+    "amount_text": "비급여 본인부담금의 90% 지원 (300만원 한도)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "parenting_10am",
+    "title": "육아기 근로시간 단축",
+    "category": "육아 / 고용",
+    "tags": [
+      "단축근무",
+      "임금보전",
+      "워라밸"
+    ],
+    "summary": "육아기 근로자가 근무 시간을 줄일 경우 임금 감소분 지원",
+    "target_text": "만 8세 이하 자녀를 둔 근로자 (주 15~35시간으로 단축)",
+    "amount_text": "단축된 시간에 대해 통상임금 100%(최초 5시간분) 등 지원",
+    "official_link": "https://www.ei.go.kr/"
+  },
+  {
+    "id": "basic_pension",
+    "title": "기초연금",
+    "category": "노인 / 소득",
+    "tags": [
+      "만65세",
+      "소득하위70%",
+      "연금"
+    ],
+    "summary": "어르신의 안정된 노후생활을 위해 매월 연금 지급",
+    "target_text": "만 65세 이상, 소득인정액이 선정기준액 이하 (하위 70%)",
+    "amount_text": "단독가구 월 최대 약 33만원 (매년 물가변동 반영)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "senior_job",
+    "title": "노인일자리 지원",
+    "category": "노인 / 일자리",
+    "tags": [
+      "공익활동",
+      "사회서비스",
+      "소득보충"
+    ],
+    "summary": "어르신이 활기차고 건강한 노후생활을 영위할 수 있도록 일자리 제공",
+    "target_text": "만 65세 이상 기초연금 수급자 등",
+    "amount_text": "공익형 월 29만원, 사회서비스형 월 70만원대 (유형별 상이)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "senior_eye_surgery",
+    "title": "노인 개안수술비 지원",
+    "category": "노인 / 의료",
+    "tags": [
+      "백내장",
+      "망막질환",
+      "저소득"
+    ],
+    "summary": "안과질환으로 일상생활이 어려운 저소득 어르신에게 수술비 지원",
+    "target_text": "만 60세 이상 기초생활수급자, 차상위계층 등",
+    "amount_text": "1안당 본인부담금 전액 (백내장 등 안질환)",
+    "official_link": "https://www.gcsc.or.kr/"
+  },
+  {
+    "id": "senior_implant",
+    "title": "노인 임플란트 건강보험",
+    "category": "노인 / 의료",
+    "tags": [
+      "치과",
+      "본인부담금",
+      "만65세"
+    ],
+    "summary": "평생 2개까지 임플란트 시술에 대해 건강보험 급여 적용",
+    "target_text": "만 65세 이상 건강보험 가입자 또는 피부양자",
+    "amount_text": "임플란트 비용의 70% 지원 (본인부담률 30%만 납부)",
+    "official_link": "https://www.nhis.or.kr/"
+  },
+  {
+    "id": "dementia_support",
+    "title": "치매치료관리비 지원",
+    "category": "노인 / 의료",
+    "tags": [
+      "치매약제비",
+      "보건소",
+      "지속지원"
+    ],
+    "summary": "치매 조기 치료를 위해 치매 약제비 본인부담금 지원",
+    "target_text": "만 60세 이상, 치매 진단 및 치료약 복용자, 기준 중위소득 120% 이하",
+    "amount_text": "월 최대 3만원 (연 36만원) 한도 실비 지원",
+    "official_link": "https://www.nid.or.kr/"
+  },
+  {
+    "id": "livelihood_benefit",
+    "title": "생계급여",
+    "category": "저소득 / 생계",
+    "tags": [
+      "기초생활보장",
+      "최저생활",
+      "기준완화"
+    ],
+    "summary": "생활이 어려운 분들에게 최저 생활비를 지원 (선정기준 완화 추세)",
+    "target_text": "가구 소득인정액이 기준 중위소득 32% 이하인 가구",
+    "amount_text": "4인 가구 기준 월 최대 약 195만원 (소득에 따라 차액 지급)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "medical_benefit",
+    "title": "의료급여",
+    "category": "저소득 / 의료",
+    "tags": [
+      "병원비",
+      "본인부담금",
+      "기초수급"
+    ],
+    "summary": "저소득층의 의료비 부담을 국가가 지원",
+    "target_text": "가구 소득인정액이 기준 중위소득 40% 이하인 가구",
+    "amount_text": "급여 항목 의료비 전액 또는 대부분 지원",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "energy_voucher",
+    "title": "에너지바우처",
+    "category": "저소득 / 생활",
+    "tags": [
+      "냉난방",
+      "전기가스",
+      "동절기"
+    ],
+    "summary": "취약계층에게 전기, 도시가스, 지역난방 등의 비용을 바우처로 지원",
+    "target_text": "생계/의료급여 수급자 중 노인, 장애인, 영유아 등 포함 세대",
+    "amount_text": "4인 세대 기준 연간 약 70만원 (하절기+동절기 합산)",
+    "official_link": "https://www.energyv.or.kr/"
+  },
+  {
+    "id": "culture_nuri",
+    "title": "문화누리카드",
+    "category": "저소득 / 문화",
+    "tags": [
+      "문화생활",
+      "여행",
+      "체육"
+    ],
+    "summary": "기초생활수급자 및 차상위계층의 문화예술, 여행, 체육 활동 지원",
+    "target_text": "6세 이상 기초생활수급자 및 차상위계층",
+    "amount_text": "1인당 연 14만원 지급 (충전식 카드)",
+    "official_link": "https://www.mnuri.kr/"
+  },
+  {
+    "id": "disability_pension",
+    "title": "장애인연금",
+    "category": "장애인 / 소득",
+    "tags": [
+      "중증장애인",
+      "소득보전",
+      "기초급여"
+    ],
+    "summary": "중증장애인의 근로능력 상실에 따른 소득 보전 및 생활 안정 지원",
+    "target_text": "18세 이상 중증장애인 중 소득 하위 70%",
+    "amount_text": "월 최대 약 40만원 (기초급여 + 부가급여)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "tomorrow_learning_card",
+    "title": "국민내일배움카드",
+    "category": "구직 / 교육",
+    "tags": [
+      "직업훈련",
+      "자기개발",
+      "국비지원"
+    ],
+    "summary": "직업 훈련이 필요한 국민에게 훈련비를 지원하여 역량 개발 도모",
+    "target_text": "실업자, 근로자, 자영업자 등 (공무원 등 일부 제외)",
+    "amount_text": "1인당 300~500만원 훈련비 지원 (5년간)",
+    "official_link": "https://www.hrd.go.kr/"
+  },
+  {
+    "id": "employment_support",
+    "title": "국민취업지원제도",
+    "category": "구직 / 소득",
+    "tags": [
+      "구직촉진수당",
+      "취업서비스",
+      "한국형실업부조"
+    ],
+    "summary": "저소득 구직자에게 취업지원서비스와 구직촉진수당을 함께 제공",
+    "target_text": "만 15~69세 구직자 (유형별 소득 요건 상이)",
+    "amount_text": "1유형: 구직촉진수당 월 50만원 × 6개월 + 부양가족 수당",
+    "official_link": "https://www.kua.go.kr/"
+  },
+  {
+    "id": "new_middle_aged_job",
+    "title": "신중년 경력형 일자리",
+    "category": "중장년 / 일자리",
+    "tags": [
+      "만50-69세",
+      "경력활용",
+      "지역일자리"
+    ],
+    "summary": "퇴직한 전문인력의 경력과 노하우를 활용할 수 있는 지역 사회공헌 일자리 제공",
+    "target_text": "만 50세~69세 미취업자 중 전문자격이나 관련 경력 3년 이상 보유자",
+    "amount_text": "최저임금 이상의 급여 지급 (주 15~40시간 근무)",
+    "official_link": "https://www.work24.go.kr/"
+  },
+  {
+    "id": "restart_counseling",
+    "title": "중장년 새출발 카운슬링",
+    "category": "중장년 / 교육",
+    "tags": [
+      "만45세이상",
+      "경력설계",
+      "무료상담"
+    ],
+    "summary": "미래 준비가 막막한 중장년에게 1:1 심층 경력설계 상담과 멘토링 제공",
+    "target_text": "만 45세 이상 중소기업 재직자 (1,000인 미만 기업) 또는 특고 종사자",
+    "amount_text": "상담 비용 전액 국비 지원 (자비부담금 0원, 내일배움카드 사용)",
+    "official_link": "https://www.hrd.go.kr/"
+  },
+  {
+    "id": "senior_tech_startup",
+    "title": "중장년 기술창업센터",
+    "category": "중장년 / 창업",
+    "tags": [
+      "만40세이상",
+      "사무실무료",
+      "창업지원"
+    ],
+    "summary": "경력과 기술을 보유한 중장년 예비 창업자에게 사무공간 및 사업화 지원",
+    "target_text": "만 40세 이상 예비 창업자 또는 창업 3년 이내 기업",
+    "amount_text": "사무공간 무료 제공 + 최대 수천만원 사업화 자금 및 멘토링 지원",
+    "official_link": "https://www.k-startup.go.kr/"
+  },
+  {
+    "id": "career_change_service",
+    "title": "중장년 전직지원 서비스",
+    "category": "중장년 / 재취업",
+    "tags": [
+      "이직준비",
+      "퇴직예정",
+      "재취업알선"
+    ],
+    "summary": "퇴직(예정) 근로자에게 재취업, 창업 등 제2의 인생 설계를 위한 종합 서비스 제공",
+    "target_text": "만 40세 이상 재직자 및 구직자 (중장년내일센터 이용)",
+    "amount_text": "이력서 첨삭, 면접 코칭, 맞춤형 채용 정보 및 알선 무료 제공",
+    "official_link": "https://www.work24.go.kr/"
+  },
+  {
+    "id": "return_ship",
+    "title": "중장년 인턴십 (리턴십)",
+    "category": "중장년 / 재취업",
+    "tags": [
+      "인턴",
+      "정규직전환",
+      "재도약"
+    ],
+    "summary": "중장년에게 기업 인턴 기회를 제공하여 직무 적응 후 정규직 채용 연계",
+    "target_text": "만 40세 이상 구직자 (주로 4050 경력보유여성 또는 중장년 남성)",
+    "amount_text": "인턴 기간(3개월) 급여 지원 및 정규직 전환 시 고용장려금 지급",
+    "official_link": "https://www.work24.go.kr/"
+  }
+]
