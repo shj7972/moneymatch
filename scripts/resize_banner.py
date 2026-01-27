@@ -14,6 +14,6 @@ def resize_image(input_path, output_path, width, height):
         sys.exit(1)
 
 if __name__ == "__main__":
-    input_file = r"C:/Users/seohy/.gemini/antigravity/brain/3d33b494-26d3-40cb-97e6-c9876825596f/uploaded_media_1769518419905.png"
+    input_file = r"C:/Users/seohy/.gemini/antigravity/brain/3d33b494-26d3-40cb-97e6-c9876825596f/uploaded_media_1769518872528.png"
     output_file = r"c:/Users/seohy/workspace_antigravity/money-match/public/banner_link_234x60.png"
     resize_image(input_file, output_file, 234, 60)
