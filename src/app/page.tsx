@@ -164,10 +164,9 @@ const SubsidyCard = ({ item }: { item: Subsidy }) => {
 };
 
 const AdPlaceholder = () => (
-    <div className="flex justify-center items-center py-4">
-        <a href="https://link.coupang.com/a/dBxh33" target="_blank" referrerPolicy="unsafe-url">
-            <img src="https://ads-partners.coupang.com/banners/961333?subId=&traceId=V0-301-969b06e95b87326d-I961333&w=300&h=250" alt="" />
-        </a>
+    <div className="bg-gray-50 rounded-2xl p-6 text-center border border-dashed border-gray-200 flex flex-col items-center justify-center h-full min-h-[200px]">
+        <span className="bg-gray-200 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded mb-2">AD</span>
+        <p className="text-gray-400 text-sm font-medium">맞춤형 광고가 표시됩니다</p>
     </div>
 );
 
