@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import subsidies from '@/data/subsidies.json';
 import Link from 'next/link';
+import ShareButton from '@/components/ShareButton';
 
 interface Subsidy {
     id: string;
@@ -50,6 +51,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
 }
 
+
+
 export default function SubsidyPage({ params }: Props) {
     const subsidy = subsidies.find((s) => s.id === params.id) as Subsidy;
 
@@ -71,7 +74,7 @@ export default function SubsidyPage({ params }: Props) {
                 </nav>
 
                 {/* Header Section */}
-                <header className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
+                <header className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 relative">
                     <div className="flex flex-wrap gap-2 mb-4">
                         <span className="px-3 py-1 bg-blue-50 text-blue-700 rounded-full text-sm font-semibold">
                             {subsidy.category}
@@ -85,10 +88,18 @@ export default function SubsidyPage({ params }: Props) {
                     <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 word-keep-all">
                         {subsidy.title}
                     </h1>
-                    <p className="text-xl text-gray-600 leading-relaxed word-keep-all">
+                    <p className="text-xl text-gray-600 leading-relaxed word-keep-all mb-6">
                         {subsidy.summary}
                     </p>
+                    <div className="flex justify-end">
+                        <ShareButton
+                            title={`${subsidy.title} | Money Match`}
+                            text={subsidy.summary}
+                            className="bg-gray-50 border-gray-200 hover:bg-blue-50 hover:border-blue-200 hover:text-blue-600"
+                        />
+                    </div>
                 </header>
+
 
                 {/* Content Section */}
                 <div className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 space-y-8">
