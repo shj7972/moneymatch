@@ -61,9 +61,13 @@ def save_news(news_items):
         json.dump(news_items, f, ensure_ascii=False, indent=2)
     print(f"Saved {len(news_items)} news items to {OUTPUT_FILE}")
 
+import sys
+
 if __name__ == "__main__":
     try:
         data = fetch_news()
         save_news(data)
+        print("Successfully updated news data.")
     except Exception as e:
-        print(f"Error: {e}")
+        print(f"Error occurred during news update: {e}", file=sys.stderr)
+        sys.exit(1)
