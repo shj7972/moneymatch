@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 type Banner = {
     href: string;
@@ -9,7 +10,6 @@ type Banner = {
     title?: string;
     width: number;
     height: number;
-    style?: React.CSSProperties;
 };
 
 const BANNERS: Banner[] = [
@@ -19,7 +19,6 @@ const BANNERS: Banner[] = [
         alt: "내 주식, 살까 팔까? Stock Insight AI 분석 결과 보기",
         width: 234,
         height: 60,
-        style: { border: 0 }
     },
     {
         href: "https://unsedam.kr",
@@ -27,16 +26,14 @@ const BANNERS: Banner[] = [
         alt: "운세담 - 2026 무료 토정비결 & AI 사주",
         width: 234,
         height: 60,
-        style: { border: "none" }
     },
     {
         href: "https://vibecheck.page",
         src: "https://vibecheck.page/images/vibecheck_banner_234x60.png",
-        alt: "VibeCheck 배너",
+        alt: "VibeCheck - 나를 찾는 트렌디한 심리테스트",
         title: "VibeCheck - 나를 찾는 트렌디한 심리테스트",
         width: 234,
         height: 60,
-        style: { borderRadius: "4px", border: "1px solid #eee" }
     },
     {
         href: "https://promptgenie.kr",
@@ -44,16 +41,14 @@ const BANNERS: Banner[] = [
         alt: "PromptGenie - AI Prompt Library",
         width: 234,
         height: 60,
-        style: { border: 0 }
     },
     {
         href: "https://irumlab.com",
         src: "https://irumlab.com/banner_link_234x60.png",
-        alt: "이룸랩 배너",
+        alt: "이룸랩 - 무료 셀프 작명, 영어 닉네임, 브랜드 네이밍",
         title: "이룸랩 - 무료 셀프 작명, 영어 닉네임, 브랜드 네이밍",
         width: 234,
         height: 60,
-        style: { border: 0 }
     },
     {
         href: "https://nutrimatch.kr",
@@ -62,7 +57,6 @@ const BANNERS: Banner[] = [
         title: "Nutri-Match - 나만의 영양제 궁합 & 저속노화 분석기",
         width: 234,
         height: 60,
-        style: { border: 0, borderRadius: "4px" }
     }
 ];
 
@@ -70,7 +64,6 @@ export default function Footer() {
     const [randomBanners, setRandomBanners] = useState<Banner[]>([]);
 
     useEffect(() => {
-        // Randomly select 3 banners on client-side mount
         const shuffled = [...BANNERS].sort(() => 0.5 - Math.random());
         setRandomBanners(shuffled.slice(0, 3));
     }, []);
@@ -94,13 +87,13 @@ export default function Footer() {
                                 title={banner.title}
                                 className="transition-transform hover:-translate-y-1"
                             >
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img
+                                <Image
                                     src={banner.src}
                                     alt={banner.alt}
                                     width={banner.width}
                                     height={banner.height}
-                                    style={banner.style}
+                                    loading="lazy"
+                                    className="rounded"
                                 />
                             </a>
                         ))}

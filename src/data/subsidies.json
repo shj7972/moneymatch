@@ -446,5 +446,369 @@
     "target_text": "만 40세 이상 구직자 (주로 4050 경력보유여성 또는 중장년 남성)",
     "amount_text": "인턴 기간(3개월) 급여 지원 및 정규직 전환 시 고용장려금 지급",
     "official_link": "https://www.work24.go.kr/"
+  },
+  {
+    "id": "youth_savings_account",
+    "title": "청년내일저축계좌",
+    "category": "청년 / 금융",
+    "tags": [
+      "만19-34세",
+      "저소득",
+      "자산형성"
+    ],
+    "summary": "저소득 근로 청년이 매월 10만원 저축 시 정부가 매칭하여 3년 후 목돈 마련 지원",
+    "target_text": "만 19~34세, 기준 중위소득 100% 이하 근로 청년",
+    "amount_text": "본인 월 10만원 저축 시 정부 월 10~30만원 매칭 (3년 후 최대 1,440만원)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "youth_guarantee_deposit_loan",
+    "title": "청년 전세자금 대출",
+    "category": "청년 / 주거",
+    "tags": [
+      "전세대출",
+      "저금리",
+      "주거안정"
+    ],
+    "summary": "무주택 청년에게 전세자금을 저금리로 대출하여 주거 안정 지원",
+    "target_text": "만 19~34세 무주택 단독 세대주 (연소득 5,000만원 이하)",
+    "amount_text": "최대 2억원, 연 1.8~2.7% (보증금 3억원 이하 주택)",
+    "official_link": "https://nhuf.molit.go.kr/"
+  },
+  {
+    "id": "youth_startup_fund",
+    "title": "청년창업사관학교",
+    "category": "청년 / 창업",
+    "tags": [
+      "만39세이하",
+      "창업교육",
+      "사업화자금"
+    ],
+    "summary": "유망 창업 아이템을 보유한 청년 예비 창업자에게 창업 전 과정을 지원",
+    "target_text": "만 39세 이하 예비 창업자 또는 창업 3년 이내 대표자",
+    "amount_text": "최대 1억원 사업화 자금 + 창업 공간 + 멘토링 + 특허 지원",
+    "official_link": "https://start.kosmes.or.kr/"
+  },
+  {
+    "id": "youth_mental_health",
+    "title": "청년 마음건강 지원",
+    "category": "청년 / 의료",
+    "tags": [
+      "심리상담",
+      "정신건강",
+      "만19-34세"
+    ],
+    "summary": "정신건강 어려움을 겪는 청년에게 전문 심리상담 비용을 지원",
+    "target_text": "만 19~34세 청년 (소득 기준 없음, 일부 지자체 별도)",
+    "amount_text": "1인당 최대 8회, 회당 5만원 상당 전문 심리상담 지원",
+    "official_link": "https://www.mohw.go.kr/"
+  },
+  {
+    "id": "youth_work_experience",
+    "title": "청년 해외취업 지원 (K-Move)",
+    "category": "청년 / 취업",
+    "tags": [
+      "해외취업",
+      "어학연수",
+      "글로벌"
+    ],
+    "summary": "해외 취업을 희망하는 청년에게 어학연수, 직무교육, 취업알선 패키지 지원",
+    "target_text": "만 34세 이하 해외 취업 희망 청년",
+    "amount_text": "어학연수비 최대 600만원 + 항공료 + 체류비 + 취업알선",
+    "official_link": "https://www.worldjob.or.kr/"
+  },
+  {
+    "id": "multicultural_family",
+    "title": "다문화가족 지원",
+    "category": "가족 / 지원",
+    "tags": [
+      "다문화",
+      "한국어교육",
+      "통번역"
+    ],
+    "summary": "결혼이민자 및 다문화가족의 한국사회 적응과 안정적 생활 지원",
+    "target_text": "결혼이민자, 귀화자 및 그 가족",
+    "amount_text": "한국어교육 무료 + 통번역 서비스 + 자녀 이중언어 교육 등",
+    "official_link": "https://www.liveinkorea.kr/"
+  },
+  {
+    "id": "single_parent_support",
+    "title": "한부모가족 지원",
+    "category": "가족 / 양육",
+    "tags": [
+      "한부모",
+      "양육비",
+      "아동양육"
+    ],
+    "summary": "한부모가족의 안정적 생활과 자녀 양육을 위한 양육비 및 교육비 지원",
+    "target_text": "만 18세 미만 자녀를 양육하는 한부모가족 (중위소득 63% 이하)",
+    "amount_text": "자녀 1인당 월 20만원 양육비 + 학용품비·생활보조금 등",
+    "official_link": "https://www.mogef.go.kr/"
+  },
+  {
+    "id": "childcare_fee_support",
+    "title": "어린이집·유치원 보육료 지원",
+    "category": "육아 / 보육",
+    "tags": [
+      "어린이집",
+      "유치원",
+      "무상보육"
+    ],
+    "summary": "만 0~5세 아동의 어린이집·유치원 이용 시 보육료·교육비 전액 지원",
+    "target_text": "만 0~5세 모든 아동 (소득 무관, 어린이집 또는 유치원 이용 시)",
+    "amount_text": "어린이집 보육료 전액 또는 유치원 교육비 전액 지원 (국공립 기준)",
+    "official_link": "https://www.childcare.go.kr/"
+  },
+  {
+    "id": "maternity_voucher",
+    "title": "임신·출산 진료비 지원 (국민행복카드)",
+    "category": "육아 / 의료",
+    "tags": [
+      "임산부",
+      "진료비",
+      "국민행복카드"
+    ],
+    "summary": "임산부의 출산 관련 진료비 부담 경감을 위해 바우처 지급",
+    "target_text": "건강보험 가입 임산부 (임신 확인 후 신청)",
+    "amount_text": "단태아 100만원, 다태아 140만원 (국민행복카드 바우처)",
+    "official_link": "https://www.nhis.or.kr/"
+  },
+  {
+    "id": "housing_benefit",
+    "title": "주거급여",
+    "category": "저소득 / 주거",
+    "tags": [
+      "월세지원",
+      "수선유지",
+      "중위소득"
+    ],
+    "summary": "저소득층의 주거 안정을 위해 임차료 또는 주택 수선비를 지원",
+    "target_text": "가구 소득인정액이 기준 중위소득 48% 이하인 가구",
+    "amount_text": "임차가구: 지역·가구원 수별 월 최대 약 52만원 / 자가: 수선비 지원",
+    "official_link": "https://www.myhome.go.kr/"
+  },
+  {
+    "id": "education_benefit",
+    "title": "교육급여",
+    "category": "저소득 / 교육",
+    "tags": [
+      "교육비",
+      "학용품비",
+      "초중고"
+    ],
+    "summary": "저소득 가구 초·중·고 학생의 교육 활동 지원비 지급",
+    "target_text": "가구 소득인정액이 기준 중위소득 50% 이하인 가구의 초·중·고 학생",
+    "amount_text": "초등 46만원, 중등 59만원, 고등 65만원 (연 1회 지급) + 고교 수업료·입학금",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "telecom_discount",
+    "title": "통신비 감면 (알뜰폰 포함)",
+    "category": "저소득 / 생활",
+    "tags": [
+      "통신요금",
+      "기초수급",
+      "차상위"
+    ],
+    "summary": "저소득층, 장애인, 국가유공자 등의 이동통신·인터넷 요금 감면",
+    "target_text": "기초생활수급자, 차상위계층, 장애인, 국가유공자 등",
+    "amount_text": "이동통신 최대 26,000원/월, 인터넷·IPTV 최대 11,550원/월 감면",
+    "official_link": "https://www.msit.go.kr/"
+  },
+  {
+    "id": "emergency_welfare",
+    "title": "긴급복지지원",
+    "category": "저소득 / 긴급",
+    "tags": [
+      "위기상황",
+      "긴급생계",
+      "의료지원"
+    ],
+    "summary": "갑작스러운 위기 상황(실직, 질병, 화재 등)으로 생계가 곤란한 가구에 긴급 지원",
+    "target_text": "주소득자 사망·실직, 중한 질병, 화재 등 위기 상황 가구",
+    "amount_text": "생계지원 4인가구 월 162만원 + 의료·주거·교육비 등 추가 지원",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "disability_activity_support",
+    "title": "장애인 활동지원 서비스",
+    "category": "장애인 / 돌봄",
+    "tags": [
+      "활동보조",
+      "방문목욕",
+      "방문간호"
+    ],
+    "summary": "장애인의 자립생활과 사회참여를 위해 활동보조, 방문목욕 등 서비스 제공",
+    "target_text": "만 6세 이상 ~ 65세 미만 장애인 (등급 기준 충족 시)",
+    "amount_text": "월 최대 480시간 활동보조 서비스 (본인부담금 일부 있음)",
+    "official_link": "https://www.bokjiro.go.kr/"
+  },
+  {
+    "id": "disability_employment",
+    "title": "장애인 고용장려금",
+    "category": "장애인 / 취업",
+    "tags": [
+      "의무고용",
+      "고용장려",
+      "사업주지원"
+    ],
+    "summary": "장애인을 의무고용률 초과하여 고용한 사업주에게 장려금 지급",
+    "target_text": "장애인 의무고용률(3.1%) 초과 고용 사업주",
+    "amount_text": "장애인 근로자 1인당 월 30~80만원 (장애 정도·성별에 따라 차등)",
+    "official_link": "https://www.kead.or.kr/"
+  },
+  {
+    "id": "veteran_benefit",
+    "title": "국가유공자 보상금",
+    "category": "보훈 / 보상",
+    "tags": [
+      "참전유공자",
+      "보훈",
+      "명예수당"
+    ],
+    "summary": "국가를 위해 희생·공헌한 국가유공자 및 유족에게 보상금 지급",
+    "target_text": "국가유공자, 참전유공자, 5·18 민주유공자 등 및 유족",
+    "amount_text": "등급별 월 수십만원~수백만원 보상금 + 의료·교육·취업 지원",
+    "official_link": "https://www.mpva.go.kr/"
+  },
+  {
+    "id": "worker_housing_fund",
+    "title": "근로자·서민 전세대출 (버팀목)",
+    "category": "일반 / 주거",
+    "tags": [
+      "전세대출",
+      "서민",
+      "저금리"
+    ],
+    "summary": "서민·근로자의 주거 안정을 위해 전세보증금 대출을 저리로 지원",
+    "target_text": "부부합산 연소득 5,000만원 이하 무주택 세대주",
+    "amount_text": "수도권 최대 1.2억원, 연 2.1~2.9% (우대금리 적용 가능)",
+    "official_link": "https://nhuf.molit.go.kr/"
+  },
+  {
+    "id": "earned_income_tax_credit",
+    "title": "근로장려금 (EITC)",
+    "category": "일반 / 금융",
+    "tags": [
+      "저소득근로자",
+      "세금환급",
+      "근로의욕"
+    ],
+    "summary": "열심히 일하지만 소득이 적은 근로자·사업자에게 장려금을 세금 환급 형태로 지원",
+    "target_text": "단독 2,200만원, 홑벌이 3,200만원, 맞벌이 3,800만원 미만 가구",
+    "amount_text": "단독 최대 165만원, 홑벌이 최대 285만원, 맞벌이 최대 330만원",
+    "official_link": "https://www.hometax.go.kr/"
+  },
+  {
+    "id": "child_tax_credit",
+    "title": "자녀장려금",
+    "category": "육아 / 금융",
+    "tags": [
+      "자녀양육",
+      "세금환급",
+      "18세미만"
+    ],
+    "summary": "저소득 가구의 자녀 양육을 지원하기 위해 장려금을 세금 환급 형태로 지급",
+    "target_text": "만 18세 미만 부양자녀가 있는 총소득 7,000만원 미만 가구",
+    "amount_text": "자녀 1인당 최대 100만원 (소득 수준에 따라 차등 지급)",
+    "official_link": "https://www.hometax.go.kr/"
+  },
+  {
+    "id": "digital_training_voucher",
+    "title": "국민 디지털 역량강화 교육",
+    "category": "일반 / 교육",
+    "tags": [
+      "디지털교육",
+      "무료강좌",
+      "AI활용"
+    ],
+    "summary": "디지털 기기 활용이 어려운 국민을 대상으로 무료 디지털 교육 제공",
+    "target_text": "만 55세 이상 고령층, 장애인, 저소득층, 농어민 등 디지털 취약계층",
+    "amount_text": "스마트폰·키오스크 활용, AI 기초 등 무료 교육 (전국 1,000개소)",
+    "official_link": "https://www.digitalcrew.or.kr/"
+  },
+  {
+    "id": "small_business_insurance",
+    "title": "소상공인 노란우산공제",
+    "category": "소상공인 / 금융",
+    "tags": [
+      "소상공인",
+      "퇴직금",
+      "소득공제"
+    ],
+    "summary": "소기업·소상공인이 폐업·노령 등에 대비할 수 있도록 공제금 적립 지원",
+    "target_text": "소기업·소상공인 사업주 (연 매출 기준 해당 업종별 상이)",
+    "amount_text": "월 5~100만원 적립, 연간 최대 500만원 소득공제 + 복리 이자",
+    "official_link": "https://www.8899.or.kr/"
+  },
+  {
+    "id": "small_business_loan",
+    "title": "소상공인 정책자금 대출",
+    "category": "소상공인 / 금융",
+    "tags": [
+      "운영자금",
+      "저금리대출",
+      "경영안정"
+    ],
+    "summary": "경영 어려움을 겪는 소상공인에게 저금리 정책자금 대출 지원",
+    "target_text": "소상공인 (상시근로자 5인 미만, 제조업 등 10인 미만)",
+    "amount_text": "업체당 최대 7,000만원, 연 2~3%대 고정금리 (5년 이내 상환)",
+    "official_link": "https://ols.semas.or.kr/"
+  },
+  {
+    "id": "farm_direct_payment",
+    "title": "농업인 공익직불금",
+    "category": "농업 / 소득",
+    "tags": [
+      "농업인",
+      "직불금",
+      "농지"
+    ],
+    "summary": "농업의 공익적 기능 증진을 위해 농업인에게 직접 지불금 지급",
+    "target_text": "0.5ha 이상 농지를 경작하는 농업인 (등록 필요)",
+    "amount_text": "소농직불금 월 10만원(연 120만원) + 면적직불금 ha당 추가 지급",
+    "official_link": "https://www.mafra.go.kr/"
+  },
+  {
+    "id": "fishing_village_support",
+    "title": "어업인 공익직불금",
+    "category": "어업 / 소득",
+    "tags": [
+      "어업인",
+      "직불금",
+      "수산업"
+    ],
+    "summary": "수산업의 공익적 기능 증진을 위해 어업인에게 직접 지불금 지급",
+    "target_text": "일정 규모 이상 어업에 종사하는 등록 어업인",
+    "amount_text": "어업 유형별 연 60~100만원 수준 직불금 지급",
+    "official_link": "https://www.mof.go.kr/"
+  },
+  {
+    "id": "regional_currency",
+    "title": "지역사랑상품권 (지역화폐)",
+    "category": "일반 / 생활",
+    "tags": [
+      "지역화폐",
+      "할인구매",
+      "소비촉진"
+    ],
+    "summary": "지역 소상공인 매출 활성화를 위한 할인 판매 지역화폐 (6~10% 할인)",
+    "target_text": "해당 지역 거주 주민 (월 구매한도 있음)",
+    "amount_text": "6~10% 할인 구매 가능 (월 50~100만원 한도, 지자체별 상이)",
+    "official_link": "https://www.zeropay.or.kr/"
+  },
+  {
+    "id": "national_health_checkup",
+    "title": "국가건강검진",
+    "category": "일반 / 의료",
+    "tags": [
+      "건강검진",
+      "무료",
+      "암검진"
+    ],
+    "summary": "건강보험 가입자 대상 일반건강검진 및 5대 암검진 무료 실시",
+    "target_text": "건강보험 가입자 및 피부양자 (짝수·홀수년도 구분)",
+    "amount_text": "일반건강검진 + 5대 암검진(위·간·대장·유방·자궁경부) 무료",
+    "official_link": "https://www.nhis.or.kr/"
   }
 ]
