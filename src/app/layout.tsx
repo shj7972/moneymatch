@@ -98,8 +98,8 @@ const jsonLd = {
                 {
                     "@type": "ListItem",
                     position: 2,
-                    name: "지원금 찾기",
-                    item: "https://moneymatch.kr/money",
+                    name: "지원금 가이드",
+                    item: "https://moneymatch.kr/blog",
                 },
             ],
         },

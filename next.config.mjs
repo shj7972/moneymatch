@@ -2,6 +2,7 @@
 const nextConfig = {
     images: {
         remotePatterns: [
+            { hostname: 'moneymatch.kr' },
             { hostname: 'stock-insight.app' },
             { hostname: 'unsedam.kr' },
             { hostname: 'vibecheck.page' },

@@ -83,7 +83,7 @@ export default function Footer() {
                                 key={index}
                                 href={banner.href}
                                 target="_blank"
-                                rel="noopener noreferrer"
+                                rel="noopener noreferrer nofollow"
                                 title={banner.title}
                                 className="transition-transform hover:-translate-y-1"
                             >
