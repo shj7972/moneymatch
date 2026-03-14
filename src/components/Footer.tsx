@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 type Banner = {
     href: string;
@@ -100,8 +101,29 @@ export default function Footer() {
                     </div>
                 </div>
 
+                {/* Legal Links */}
+                <div className="border-t border-gray-50 pt-8 mb-4">
+                    <nav aria-label="사이트 하단 메뉴" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
+                        <Link href="/about" className="text-gray-400 hover:text-blue-600 transition-colors">
+                            서비스 소개
+                        </Link>
+                        <Link href="/privacy" className="text-gray-400 hover:text-blue-600 transition-colors">
+                            개인정보처리방침
+                        </Link>
+                        <Link href="/terms" className="text-gray-400 hover:text-blue-600 transition-colors">
+                            이용약관
+                        </Link>
+                        <Link href="/contact" className="text-gray-400 hover:text-blue-600 transition-colors">
+                            문의하기
+                        </Link>
+                        <Link href="/blog" className="text-gray-400 hover:text-blue-600 transition-colors">
+                            지원금 가이드
+                        </Link>
+                    </nav>
+                </div>
+
                 {/* Copyright Section */}
-                <div className="text-center border-t border-gray-50 pt-8">
+                <div className="text-center">
                     <p className="text-gray-400 text-sm">
                         &copy; {new Date().getFullYear()} Money Match. All rights reserved.
                     </p>

@@ -21,6 +21,9 @@ interface ContentBlock {
     text: string;
     heading?: string;
     relatedSubsidy?: string;
+    paragraphs?: string[];
+    bullets?: string[];
+    callout?: string;
 }
 
 interface Props {
@@ -42,12 +45,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         return { title: '글을 찾을 수 없습니다' };
     }
 
+    const year = new Date(post.updatedAt).getFullYear();
+    const seoTitle = `${post.title} [${year} 최신]`;
+    const seoDescription = `${post.summary} 신청 조건·방법·금액을 한눈에 확인하고 놓치는 혜택 없이 챙기세요.`;
+
     return {
-        title: post.title,
-        description: post.summary,
+        title: seoTitle,
+        description: seoDescription,
         openGraph: {
-            title: post.title,
-            description: post.summary,
+            title: seoTitle,
+            description: seoDescription,
             type: 'article',
             url: `https://moneymatch.kr/blog/${post.id}`,
             publishedTime: post.publishedAt,
@@ -55,13 +62,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         twitter: {
             card: 'summary_large_image',
-            title: post.title,
-            description: post.summary,
+            title: seoTitle,
+            description: seoDescription,
         },
         alternates: {
             canonical: `https://moneymatch.kr/blog/${post.id}`,
         },
-        keywords: [...post.tags, '정부지원금', '보조금', post.category],
+        keywords: [...post.tags, '정부지원금', '보조금', post.category, '신청방법', `${year} 지원금`],
     };
 }
 
@@ -218,13 +225,15 @@ export default function BlogPostPage({ params }: Props) {
                     <div className="space-y-8">
                         {post.content.map((block, index) => {
                             if (block.type === 'intro') {
+                                const paras = block.paragraphs ?? [block.text];
                                 return (
-                                    <p
-                                        key={index}
-                                        className="text-gray-600 leading-relaxed text-lg border-l-4 border-blue-200 pl-4 break-keep"
-                                    >
-                                        {block.text}
-                                    </p>
+                                    <div key={index} className="space-y-3 border-l-4 border-blue-200 pl-4">
+                                        {paras.map((para, i) => (
+                                            <p key={i} className="text-gray-600 leading-relaxed text-lg break-keep">
+                                                {para}
+                                            </p>
+                                        ))}
+                                    </div>
                                 );
                             }
 
@@ -232,15 +241,33 @@ export default function BlogPostPage({ params }: Props) {
                                 const relatedSubsidy = block.relatedSubsidy
                                     ? subsidies.find((s) => s.id === block.relatedSubsidy)
                                     : null;
+                                const paras = block.paragraphs ?? [block.text];
 
                                 return (
                                     <section key={index} className="space-y-3">
                                         <h2 className="text-xl font-bold text-gray-900 break-keep">
                                             {block.heading}
                                         </h2>
-                                        <p className="text-gray-600 leading-relaxed break-keep">
-                                            {block.text}
-                                        </p>
+                                        {paras.map((para, i) => (
+                                            <p key={i} className="text-gray-600 leading-relaxed break-keep">
+                                                {para}
+                                            </p>
+                                        ))}
+                                        {block.bullets && block.bullets.length > 0 && (
+                                            <ul className="space-y-1.5 bg-gray-50 rounded-xl p-4 border border-gray-100">
+                                                {block.bullets.map((bullet, i) => (
+                                                    <li key={i} className="flex gap-2 text-gray-700 text-sm">
+                                                        <span className="text-blue-500 flex-shrink-0 font-bold">•</span>
+                                                        <span className="break-keep">{bullet}</span>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                        {block.callout && (
+                                            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800 break-keep leading-relaxed">
+                                                <span className="font-bold">⚠️ 주의: </span>{block.callout}
+                                            </div>
+                                        )}
                                         {relatedSubsidy && (
                                             <Link
                                                 href={`/money/${relatedSubsidy.id}`}
@@ -267,14 +294,14 @@ export default function BlogPostPage({ params }: Props) {
                             }
 
                             if (block.type === 'conclusion') {
+                                const paras = block.paragraphs ?? [block.text];
                                 return (
-                                    <div
-                                        key={index}
-                                        className="bg-gray-50 rounded-xl p-6 border border-gray-100"
-                                    >
-                                        <p className="text-gray-700 leading-relaxed font-medium break-keep">
-                                            {block.text}
-                                        </p>
+                                    <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-100 space-y-3">
+                                        {paras.map((para, i) => (
+                                            <p key={i} className="text-gray-700 leading-relaxed font-medium break-keep">
+                                                {para}
+                                            </p>
+                                        ))}
                                     </div>
                                 );
                             }

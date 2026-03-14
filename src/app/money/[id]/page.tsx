@@ -38,27 +38,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         };
     }
 
-    const title = `${subsidy.title} 신청방법·대상·금액 총정리 (2026)`;
-    const description = `${subsidy.title} - ${subsidy.summary} 지원대상: ${subsidy.target_text.slice(0, 60)}. 지원금액: ${subsidy.amount_text.slice(0, 60)}.`;
+    const title = `${subsidy.title} 신청방법·대상·금액 총정리 (2026 최신)`;
+    const description = `[2026 최신] ${subsidy.title} 신청 자격과 지원금액을 한눈에 확인하세요. ${subsidy.summary} 지원대상: ${subsidy.target_text.slice(0, 50)}`;
 
     return {
         title,
         description,
         openGraph: {
-            title: `${subsidy.title} | Money Match`,
-            description: subsidy.summary,
+            title: `${subsidy.title} 신청방법·지원금액 총정리 | Money Match`,
+            description,
             type: 'article',
             url: `https://moneymatch.kr/money/${subsidy.id}`,
         },
         twitter: {
             card: 'summary_large_image',
-            title: `${subsidy.title} | Money Match`,
-            description: subsidy.summary,
+            title: `${subsidy.title} 신청방법·지원금액 총정리 | Money Match`,
+            description,
         },
         alternates: {
             canonical: `https://moneymatch.kr/money/${subsidy.id}`,
         },
-        keywords: [...subsidy.tags, subsidy.category, '정부지원금', '금융혜택', '보조금 신청', '2026 지원금'],
+        keywords: [...subsidy.tags, subsidy.category, '정부지원금', '신청방법', '보조금 신청', '2026 지원금', `${subsidy.title} 신청`],
     };
 }
 

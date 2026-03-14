@@ -36,6 +36,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: 'monthly',
             priority: 0.8,
         },
+        {
+            url: 'https://moneymatch.kr/about',
+            lastModified: new Date('2026-02-01'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.5,
+        },
+        {
+            url: 'https://moneymatch.kr/contact',
+            lastModified: new Date('2026-02-01'),
+            changeFrequency: 'monthly' as const,
+            priority: 0.4,
+        },
+        {
+            url: 'https://moneymatch.kr/privacy',
+            lastModified: new Date('2026-02-01'),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
+        {
+            url: 'https://moneymatch.kr/terms',
+            lastModified: new Date('2026-02-01'),
+            changeFrequency: 'yearly' as const,
+            priority: 0.3,
+        },
         ...subsidyUrls,
         ...blogUrls,
     ]
