@@ -119,7 +119,7 @@ export default function PrivacyPage() {
                             <div className="bg-blue-50 rounded-xl p-5 border border-blue-100 text-sm">
                                 <ul className="space-y-1 text-gray-700">
                                     <li><span className="font-semibold">서비스명:</span> Money Match (머니매치)</li>
-                                    <li><span className="font-semibold">이메일:</span> contact@moneymatch.kr</li>
+                                    <li><span className="font-semibold">이메일:</span> <Link href="/contact" className="text-blue-600 hover:underline">문의 폼 이용</Link></li>
                                     <li><span className="font-semibold">처리 기간:</span> 영업일 기준 7일 이내 답변</li>
                                 </ul>
                             </div>
