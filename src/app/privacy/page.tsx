@@ -45,7 +45,6 @@ export default function PrivacyPage() {
                                 <ul className="space-y-1 text-sm">
                                     <li>• IP 주소, 방문 일시, 서비스 이용 기록, 브라우저 종류</li>
                                     <li>• 쿠키(Cookie): 구글 애널리틱스(Google Analytics) 통계 목적</li>
-                                    <li>• 광고 쿠키: 구글 애드센스(Google AdSense) 맞춤형 광고 목적</li>
                                 </ul>
                             </div>
                             <p className="mt-3 text-sm text-gray-500 break-keep">
@@ -58,8 +57,7 @@ export default function PrivacyPage() {
                             <p className="mb-3 break-keep">수집된 정보는 다음 목적으로만 이용됩니다.</p>
                             <ul className="space-y-2">
                                 <li className="flex gap-2"><span className="text-blue-500 font-bold flex-shrink-0">①</span><span className="break-keep">서비스 접속 통계 분석 및 품질 개선 (Google Analytics)</span></li>
-                                <li className="flex gap-2"><span className="text-blue-500 font-bold flex-shrink-0">②</span><span className="break-keep">맞춤형 광고 제공 (Google AdSense)</span></li>
-                                <li className="flex gap-2"><span className="text-blue-500 font-bold flex-shrink-0">③</span><span className="break-keep">서비스의 원활한 운영 및 보안 유지</span></li>
+                                <li className="flex gap-2"><span className="text-blue-500 font-bold flex-shrink-0">②</span><span className="break-keep">서비스의 원활한 운영 및 보안 유지</span></li>
                             </ul>
                         </section>
 
@@ -67,7 +65,6 @@ export default function PrivacyPage() {
                             <h2 className="text-xl font-bold text-gray-900 mb-3">제3조 개인정보의 보유 및 이용 기간</h2>
                             <p className="break-keep">
                                 자동 수집되는 통계 정보(Google Analytics)는 수집일로부터 26개월간 보관되며, 이후 자동 삭제됩니다.
-                                광고 관련 쿠키는 구글의 정책에 따라 관리됩니다.
                             </p>
                         </section>
 
@@ -84,7 +81,7 @@ export default function PrivacyPage() {
                                 </div>
                                 <div className="grid grid-cols-2 gap-2 text-gray-600">
                                     <span>Google LLC</span>
-                                    <span>웹 분석(Analytics) 및 광고(AdSense) 서비스 운영</span>
+                                    <span>웹 분석(Analytics) 서비스 운영</span>
                                 </div>
                             </div>
                         </section>
@@ -92,7 +89,7 @@ export default function PrivacyPage() {
                         <section>
                             <h2 className="text-xl font-bold text-gray-900 mb-3">제5조 쿠키(Cookie) 관리</h2>
                             <p className="mb-3 break-keep">
-                                서비스는 구글 애널리틱스 및 애드센스 운영을 위해 쿠키를 사용합니다.
+                                서비스는 구글 애널리틱스 운영을 위해 쿠키를 사용합니다.
                                 이용자는 웹 브라우저 설정을 통해 쿠키 저장을 거부하거나 삭제할 수 있습니다.
                                 단, 쿠키를 거부할 경우 일부 서비스 이용에 불편이 생길 수 있습니다.
                             </p>

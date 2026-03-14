@@ -119,12 +119,6 @@ export default function RootLayout({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
                 />
                 <Script
-                    async
-                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2947913248390883"
-                    crossOrigin="anonymous"
-                    strategy="lazyOnload"
-                />
-                <Script
                     src="https://www.googletagmanager.com/gtag/js?id=G-W73M3RBDFT"
                     strategy="afterInteractive"
                 />

@@ -116,17 +116,9 @@ export default function TermsPage() {
                             </ul>
                         </section>
 
-                        <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-3">제6조 광고</h2>
-                            <p className="break-keep">
-                                서비스는 Google AdSense 등 제3자 광고 서비스를 통해 광고를 게재할 수 있습니다.
-                                광고 내용은 서비스 운영자가 직접 제작하거나 추천하는 것이 아니며, 광고주와의 거래에서 발생하는 불이익에 대해
-                                서비스 운영자는 책임을 지지 않습니다.
-                            </p>
-                        </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-3">제7조 약관의 변경</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-3">제6조 약관의 변경</h2>
                             <p className="break-keep">
                                 서비스 운영자는 합리적인 사유가 있는 경우 본 약관을 변경할 수 있으며, 변경 시 서비스 내 공지를 통해 안내합니다.
                                 변경된 약관은 공지 후 7일이 경과하면 효력이 발생합니다.
@@ -134,7 +126,7 @@ export default function TermsPage() {
                         </section>
 
                         <section>
-                            <h2 className="text-xl font-bold text-gray-900 mb-3">제8조 준거법 및 분쟁 해결</h2>
+                            <h2 className="text-xl font-bold text-gray-900 mb-3">제7조 준거법 및 분쟁 해결</h2>
                             <p className="break-keep">
                                 본 약관은 대한민국 법령에 따라 해석되며, 서비스 이용과 관련한 분쟁은 관련 법령에 따른 절차를 통해 해결합니다.
                             </p>
