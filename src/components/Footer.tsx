@@ -70,15 +70,19 @@ export default function Footer() {
     }, []);
 
     return (
-        <footer className="bg-white border-t border-gray-100 pt-10 pb-8 mt-auto">
-            <div className="max-w-7xl mx-auto px-5">
+        <footer className="relative bg-slate-900 pt-20 pb-12 mt-auto overflow-hidden">
+            {/* Background Decor */}
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
+            <div className="absolute -bottom-24 -right-24 w-96 h-96 bg-indigo-500/10 rounded-full blur-[100px]" />
 
+            <div className="max-w-7xl mx-auto px-5 relative z-10">
                 {/* Banner Exchange Section */}
-                <div className="mb-10">
-                    <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 text-center">
-                        Partner Sites
-                    </h3>
-                    <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+                <div className="mb-20">
+                    <div className="flex flex-col items-center mb-10">
+                        <span className="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em] mb-4">Official Partners</span>
+                        <div className="w-12 h-0.5 bg-indigo-500/30 rounded-full" />
+                    </div>
+                    <div className="flex flex-wrap justify-center items-center gap-6 md:gap-12">
                         {randomBanners.map((banner, index) => (
                             <a
                                 key={index}
@@ -86,7 +90,7 @@ export default function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer nofollow"
                                 title={banner.title}
-                                className="transition-transform hover:-translate-y-1"
+                                className="transition-all duration-300 hover:scale-105 filter grayscale hover:grayscale-0 opacity-40 hover:opacity-100"
                             >
                                 <Image
                                     src={banner.src}
@@ -94,41 +98,45 @@ export default function Footer() {
                                     width={banner.width}
                                     height={banner.height}
                                     loading="lazy"
-                                    className="rounded"
+                                    className="rounded-lg shadow-2xl"
                                 />
                             </a>
                         ))}
                     </div>
                 </div>
 
-                {/* Legal Links */}
-                <div className="border-t border-gray-50 pt-8 mb-4">
-                    <nav aria-label="사이트 하단 메뉴" className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
-                        <Link href="/about" className="text-gray-400 hover:text-blue-600 transition-colors">
+                {/* Legal Links & Info */}
+                <div className="border-t border-slate-800 pt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
+                    <div className="max-w-xs">
+                        <h2 className="text-xl font-black text-white mb-4">Money Match</h2>
+                        <p className="text-slate-500 text-xs leading-relaxed break-keep">
+                            당신의 삶에 실질적인 도움이 되는 정부 지원 정보를 인공지능이 가장 빠르고 정확하게 찾아드립니다.
+                        </p>
+                    </div>
+
+                    <nav aria-label="사이트 하단 메뉴" className="flex flex-wrap justify-center md:justify-end gap-x-10 gap-y-4 text-sm font-bold">
+                        <Link href="/about" className="text-slate-400 hover:text-white transition-colors">
                             서비스 소개
                         </Link>
-                        <Link href="/privacy" className="text-gray-400 hover:text-blue-600 transition-colors">
+                        <Link href="/privacy" className="text-slate-400 hover:text-white transition-colors">
                             개인정보처리방침
                         </Link>
-                        <Link href="/terms" className="text-gray-400 hover:text-blue-600 transition-colors">
+                        <Link href="/terms" className="text-slate-400 hover:text-white transition-colors">
                             이용약관
                         </Link>
-                        <Link href="/contact" className="text-gray-400 hover:text-blue-600 transition-colors">
+                        <Link href="/contact" className="text-slate-400 hover:text-white transition-colors">
                             문의하기
-                        </Link>
-                        <Link href="/blog" className="text-gray-400 hover:text-blue-600 transition-colors">
-                            지원금 가이드
                         </Link>
                     </nav>
                 </div>
 
                 {/* Copyright Section */}
-                <div className="text-center">
-                    <p className="text-gray-400 text-sm">
-                        &copy; {new Date().getFullYear()} Money Match. All rights reserved.
+                <div className="mt-16 pt-8 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] font-bold uppercase tracking-widest">
+                    <p className="text-slate-600">
+                        &copy; {new Date().getFullYear()} Money Match. All Rights Reserved.
                     </p>
-                    <p className="text-gray-300 text-xs mt-2">
-                        본 사이트에서 제공하는 정보는 참고용이며, 정확한 정보는 각 공식 기관에서 확인하시기 바랍니다.
+                    <p className="text-slate-700 max-w-sm md:text-right">
+                        정보의 정확성을 위해 항상 공식 기관의 최신 공고를 확인해 주세요.
                     </p>
                 </div>
             </div>

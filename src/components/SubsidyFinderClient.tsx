@@ -73,9 +73,9 @@ const FilterButton = ({
 }) => (
     <button
         onClick={onClick}
-        className={`px-5 py-3 rounded-xl text-sm md:text-base font-semibold transition-all duration-200 shadow-sm border ${isSelected
-            ? 'bg-blue-600 text-white border-blue-600 shadow-blue-200 scale-105'
-            : 'bg-white text-gray-500 border-gray-200 hover:bg-gray-50 hover:border-gray-300'
+        className={`px-6 py-3.5 rounded-2xl text-sm md:text-base font-bold transition-all duration-300 border ${isSelected
+            ? 'bg-indigo-600 text-white border-indigo-600 shadow-xl shadow-indigo-100 scale-[1.03]'
+            : 'bg-white text-gray-400 border-gray-100 hover:border-indigo-200 hover:text-indigo-500 hover:bg-indigo-50/30'
             }`}
     >
         {children}
@@ -85,59 +85,52 @@ const FilterButton = ({
 const SubsidyCard = ({ item }: { item: Subsidy }) => {
     return (
         <div
-            className={`group bg-white rounded-2xl shadow-sm border border-gray-100 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg border-t-4 ${getCategoryStyle(item.category)} h-full flex flex-col`}
+            className={`group glass-card rounded-3xl p-7 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-indigo-100 border-t-[6px] ${getCategoryStyle(item.category)} h-full flex flex-col`}
         >
-            <div className="flex justify-between items-start mb-4">
-                <div className="flex items-center space-x-2 bg-gray-50 px-2 py-1 rounded-lg">
+            <div className="flex justify-between items-start mb-5">
+                <div className="flex items-center space-x-2 bg-indigo-50/50 px-3 py-1.5 rounded-full border border-indigo-100/50">
                     {getCategoryIcon(item.category)}
-                    <span className="text-xs font-bold text-gray-600">
+                    <span className="text-[11px] font-extrabold text-indigo-600 uppercase tracking-tighter">
                         {item.category}
                     </span>
                 </div>
             </div>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-indigo-600 group-hover:to-blue-600 transition-all">
                 {item.title}
             </h3>
 
-            <p className="text-gray-500 text-sm mb-4 line-clamp-2 flex-grow">
+            <p className="text-gray-500 text-sm mb-6 line-clamp-2 flex-grow leading-relaxed">
                 {item.summary}
             </p>
 
-            <div className="flex flex-wrap gap-2 mb-5">
+            <div className="flex flex-wrap gap-2 mb-6">
                 {item.tags.map((tag, idx) => (
                     <span
                         key={idx}
-                        className="text-xs font-medium text-gray-600 bg-gray-100 px-2.5 py-1 rounded-full border border-gray-200"
+                        className="text-[10px] font-bold text-gray-400 bg-gray-50 px-3 py-1 rounded-lg border border-gray-100/50 group-hover:border-indigo-100 group-hover:text-indigo-400 transition-colors"
                     >
                         #{tag}
                     </span>
                 ))}
             </div>
 
-            <div className="mt-auto pt-4 border-t border-gray-50">
+            <div className="mt-auto pt-5 border-t border-gray-100/50 flex flex-col gap-4">
                 <div className="flex justify-between items-center text-sm">
-                    <span className="text-gray-400 font-medium">지원혜택</span>
-                    <span className="text-blue-600 font-bold truncate max-w-[60%] text-right">{item.amount_text}</span>
+                    <span className="text-gray-400 font-semibold tracking-tight">지원규모</span>
+                    <span className="text-indigo-600 font-black text-lg">{item.amount_text}</span>
                 </div>
                 <Link
                     href={`/money/${item.id}`}
-                    className="mt-4 w-full flex items-center justify-center space-x-1 bg-gray-50 hover:bg-blue-50 text-gray-600 hover:text-blue-600 font-bold py-3 rounded-xl transition-colors text-sm"
+                    className="w-full flex items-center justify-center space-x-2 bg-slate-900 text-white font-bold py-4 rounded-2xl transition-all hover:bg-indigo-600 shadow-lg hover:shadow-indigo-200"
                 >
-                    <span>자세히 보기</span>
+                    <span>상세 정보 보기</span>
                     <ChevronRight className="w-4 h-4" />
                 </Link>
             </div>
         </div>
     );
 };
-
-const AdPlaceholder = () => (
-    <div className="bg-gray-50 rounded-2xl p-6 text-center border border-dashed border-gray-200 flex flex-col items-center justify-center h-full min-h-[200px]">
-        <span className="bg-gray-200 text-gray-500 text-[10px] font-bold px-2 py-0.5 rounded mb-2">AD</span>
-        <p className="text-gray-400 text-sm font-medium">맞춤형 광고가 표시됩니다</p>
-    </div>
-);
 
 // --- Main Client Component ---
 
@@ -290,13 +283,8 @@ export default function SubsidyFinderClient({ subsidies }: { subsidies: Subsidy[
 
                         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                             {filteredSubsidies.length > 0 ? (
-                                filteredSubsidies.map((item, index) => (
-                                    <React.Fragment key={item.id}>
-                                        <SubsidyCard item={item} />
-                                        {(index + 1) % 6 === 0 && (
-                                            <AdPlaceholder />
-                                        )}
-                                    </React.Fragment>
+                                filteredSubsidies.map((item) => (
+                                    <SubsidyCard key={item.id} item={item} />
                                 ))
                             ) : (
                                 <div className="col-span-full py-20 bg-white rounded-3xl border border-dashed border-gray-200 text-center">
