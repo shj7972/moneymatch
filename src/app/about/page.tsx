@@ -5,12 +5,12 @@ export const metadata: Metadata = {
     title: 'Money Match 소개 - 정부지원금 매칭 서비스',
     description: 'Money Match는 복잡한 정부지원금 정보를 누구나 쉽게 찾을 수 있도록 만든 무료 정보 서비스입니다. 청년·육아·노인·저소득 가구를 위한 58가지 지원금을 한눈에 확인하세요.',
     alternates: {
-        canonical: 'https://moneymatch.kr/about',
+        canonical: 'https://www.moneymatch.kr/about',
     },
     openGraph: {
         title: 'Money Match 소개 - 정부지원금 매칭 서비스',
         description: '복잡한 정부지원금 정보를 누구나 쉽게 찾을 수 있도록 만든 무료 정보 서비스입니다.',
-        url: 'https://moneymatch.kr/about',
+        url: 'https://www.moneymatch.kr/about',
         type: 'website',
     },
 };

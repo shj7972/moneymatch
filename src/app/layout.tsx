@@ -12,7 +12,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://moneymatch.kr"),
+    metadataBase: new URL("https://www.moneymatch.kr"),
     title: {
         default: "2026 정부지원금 찾기 - 나에게 맞는 보조금 매칭 | Money Match",
         template: "%s | Money Match - 정부지원금 매칭",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         title: "2026 정부지원금 찾기 - 나에게 맞는 보조금 매칭 | Money Match",
         description:
             "청년·육아·노인·저소득 정부지원금을 3초 만에 찾아보세요. 32가지 보조금 정보와 신청방법을 한눈에!",
-        url: "https://moneymatch.kr",
+        url: "https://www.moneymatch.kr",
         siteName: "Money Match",
         locale: "ko_KR",
         type: "website",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
             "청년·육아·노인·저소득 정부지원금을 3초 만에 찾아보세요.",
     },
     alternates: {
-        canonical: "https://moneymatch.kr",
+        canonical: "https://www.moneymatch.kr",
     },
     verification: {
         other: {
@@ -63,43 +63,43 @@ const jsonLd = {
     "@graph": [
         {
             "@type": "WebSite",
-            "@id": "https://moneymatch.kr/#website",
-            url: "https://moneymatch.kr",
+            "@id": "https://www.moneymatch.kr/#website",
+            url: "https://www.moneymatch.kr",
             name: "Money Match",
             description:
                 "청년·육아·노인·저소득 정부지원금을 3초 만에 찾아보세요.",
             inLanguage: "ko",
             potentialAction: {
                 "@type": "SearchAction",
-                target: "https://moneymatch.kr/?q={search_term_string}",
+                target: "https://www.moneymatch.kr/?q={search_term_string}",
                 "query-input": "required name=search_term_string",
             },
         },
         {
             "@type": "Organization",
-            "@id": "https://moneymatch.kr/#organization",
+            "@id": "https://www.moneymatch.kr/#organization",
             name: "Money Match",
-            url: "https://moneymatch.kr",
+            url: "https://www.moneymatch.kr",
             logo: {
                 "@type": "ImageObject",
-                url: "https://moneymatch.kr/icon.png",
+                url: "https://www.moneymatch.kr/icon.png",
             },
         },
         {
             "@type": "BreadcrumbList",
-            "@id": "https://moneymatch.kr/#breadcrumb",
+            "@id": "https://www.moneymatch.kr/#breadcrumb",
             itemListElement: [
                 {
                     "@type": "ListItem",
                     position: 1,
                     name: "홈",
-                    item: "https://moneymatch.kr",
+                    item: "https://www.moneymatch.kr",
                 },
                 {
                     "@type": "ListItem",
                     position: 2,
                     name: "지원금 가이드",
-                    item: "https://moneymatch.kr/blog",
+                    item: "https://www.moneymatch.kr/blog",
                 },
             ],
         },

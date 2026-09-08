@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         title: '나에게 맞는 정부지원금 찾기 | Money Match 퀴즈',
         description:
             '5가지 간단한 질문으로 받을 수 있는 정부지원금을 찾아보세요. 무료 맞춤 매칭!',
-        url: 'https://moneymatch.kr/quiz',
+        url: 'https://www.moneymatch.kr/quiz',
         type: 'website',
     },
     twitter: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
             '5가지 간단한 질문으로 받을 수 있는 정부지원금을 찾아보세요.',
     },
     alternates: {
-        canonical: 'https://moneymatch.kr/quiz',
+        canonical: 'https://www.moneymatch.kr/quiz',
     },
     keywords: [
         '정부지원금 찾기',

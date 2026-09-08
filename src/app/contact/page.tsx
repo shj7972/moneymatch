@@ -6,12 +6,12 @@ export const metadata: Metadata = {
     title: '문의하기 | Money Match',
     description: 'Money Match에 문의사항, 오류 신고, 정보 수정 요청을 남겨주세요. 영업일 기준 3일 이내에 답변드립니다.',
     alternates: {
-        canonical: 'https://moneymatch.kr/contact',
+        canonical: 'https://www.moneymatch.kr/contact',
     },
     openGraph: {
         title: '문의하기 | Money Match',
         description: 'Money Match에 문의사항, 오류 신고, 정보 수정 요청을 남겨주세요.',
-        url: 'https://moneymatch.kr/contact',
+        url: 'https://www.moneymatch.kr/contact',
         type: 'website',
     },
 };

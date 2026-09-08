@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: '이용약관 | Money Match',
     description: 'Money Match 서비스 이용약관입니다. 서비스 이용 조건, 금지 행위, 면책 사항 등을 안내합니다.',
     alternates: {
-        canonical: 'https://moneymatch.kr/terms',
+        canonical: 'https://www.moneymatch.kr/terms',
     },
 };
 

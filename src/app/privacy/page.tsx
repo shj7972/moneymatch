@@ -5,7 +5,7 @@ export const metadata: Metadata = {
     title: '개인정보처리방침 | Money Match',
     description: 'Money Match의 개인정보처리방침입니다. 수집하는 개인정보의 항목, 이용 목적, 보유 기간 등을 안내합니다.',
     alternates: {
-        canonical: 'https://moneymatch.kr/privacy',
+        canonical: 'https://www.moneymatch.kr/privacy',
     },
 };
 

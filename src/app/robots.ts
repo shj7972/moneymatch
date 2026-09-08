@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
                 allow: '/',
             },
         ],
-        sitemap: 'https://moneymatch.kr/sitemap.xml',
+        sitemap: 'https://www.moneymatch.kr/sitemap.xml',
     }
 }

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     openGraph: {
         title: '정부지원금 가이드 블로그 | Money Match',
         description: '대상별 정부지원금 가이드를 확인하세요.',
-        url: 'https://moneymatch.kr/blog',
+        url: 'https://www.moneymatch.kr/blog',
     },
     alternates: {
-        canonical: 'https://moneymatch.kr/blog',
+        canonical: 'https://www.moneymatch.kr/blog',
     },
 };
 

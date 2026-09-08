@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: `${subsidy.title} 신청방법·지원금액 총정리 | Money Match`,
             description,
             type: 'article',
-            url: `https://moneymatch.kr/money/${subsidy.id}`,
+            url: `https://www.moneymatch.kr/money/${subsidy.id}`,
         },
         twitter: {
             card: 'summary_large_image',
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description,
         },
         alternates: {
-            canonical: `https://moneymatch.kr/money/${subsidy.id}`,
+            canonical: `https://www.moneymatch.kr/money/${subsidy.id}`,
         },
         keywords: [...subsidy.tags, subsidy.category, '정부지원금', '신청방법', '보조금 신청', '2026 지원금', `${subsidy.title} 신청`],
     };
@@ -125,7 +125,7 @@ function generateGovernmentServiceJsonLd(subsidy: Subsidy) {
             '@type': 'Country',
             name: '대한민국',
         },
-        url: `https://moneymatch.kr/money/${subsidy.id}`,
+        url: `https://www.moneymatch.kr/money/${subsidy.id}`,
     };
 }
 
@@ -138,19 +138,19 @@ function generateBreadcrumbJsonLd(subsidy: Subsidy) {
                 '@type': 'ListItem',
                 position: 1,
                 name: '홈',
-                item: 'https://moneymatch.kr',
+                item: 'https://www.moneymatch.kr',
             },
             {
                 '@type': 'ListItem',
                 position: 2,
                 name: '지원금 찾기',
-                item: 'https://moneymatch.kr/money',
+                item: 'https://www.moneymatch.kr/money',
             },
             {
                 '@type': 'ListItem',
                 position: 3,
                 name: subsidy.title,
-                item: `https://moneymatch.kr/money/${subsidy.id}`,
+                item: `https://www.moneymatch.kr/money/${subsidy.id}`,
             },
         ],
     };

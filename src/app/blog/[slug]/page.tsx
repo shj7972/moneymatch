@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             title: seoTitle,
             description: seoDescription,
             type: 'article',
-            url: `https://moneymatch.kr/blog/${post.id}`,
+            url: `https://www.moneymatch.kr/blog/${post.id}`,
             publishedTime: post.publishedAt,
             modifiedTime: post.updatedAt,
         },
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             description: seoDescription,
         },
         alternates: {
-            canonical: `https://moneymatch.kr/blog/${post.id}`,
+            canonical: `https://www.moneymatch.kr/blog/${post.id}`,
         },
         keywords: [...post.tags, '정부지원금', '보조금', post.category, '신청방법', `${year} 지원금`],
     };
@@ -83,17 +83,17 @@ function generateArticleJsonLd(post: BlogPost) {
         author: {
             '@type': 'Organization',
             name: 'Money Match',
-            url: 'https://moneymatch.kr',
+            url: 'https://www.moneymatch.kr',
         },
         publisher: {
             '@type': 'Organization',
             name: 'Money Match',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://moneymatch.kr/icon.png',
+                url: 'https://www.moneymatch.kr/icon.png',
             },
         },
-        mainEntityOfPage: `https://moneymatch.kr/blog/${post.id}`,
+        mainEntityOfPage: `https://www.moneymatch.kr/blog/${post.id}`,
     };
 }
 
@@ -106,19 +106,19 @@ function generateBreadcrumbJsonLd(post: BlogPost) {
                 '@type': 'ListItem',
                 position: 1,
                 name: '홈',
-                item: 'https://moneymatch.kr',
+                item: 'https://www.moneymatch.kr',
             },
             {
                 '@type': 'ListItem',
                 position: 2,
                 name: '가이드',
-                item: 'https://moneymatch.kr/blog',
+                item: 'https://www.moneymatch.kr/blog',
             },
             {
                 '@type': 'ListItem',
                 position: 3,
                 name: post.title,
-                item: `https://moneymatch.kr/blog/${post.id}`,
+                item: `https://www.moneymatch.kr/blog/${post.id}`,
             },
         ],
     };
