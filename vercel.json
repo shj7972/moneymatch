@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.moneymatch.kr"
+        }
+      ],
+      "destination": "https://moneymatch.kr/$1",
+      "permanent": true
+    }
+  ]
+}
