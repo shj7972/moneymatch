@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import subsidies from '@/data/subsidies.json';
+import contentSections from '@/data/content_sections.json';
 import Link from 'next/link';
 import ShareButton from '@/components/ShareButton';
 
@@ -60,6 +61,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         },
         keywords: [...subsidy.tags, subsidy.category, '정부지원금', '신청방법', '보조금 신청', '2026 지원금', `${subsidy.title} 신청`],
     };
+}
+
+const sectionMap = contentSections as Record<
+    string,
+    { title: string; category: string; sections: Array<{ heading: string; paragraphs: string[] }> }
+>;
+
+function getContentSections(id: string) {
+    return sectionMap[id]?.sections ?? [];
 }
 
 function getRelatedSubsidies(current: Subsidy): Subsidy[] {
@@ -167,6 +177,7 @@ export default function SubsidyPage({ params }: Props) {
     const faqJsonLd = generateFaqJsonLd(subsidy);
     const serviceJsonLd = generateGovernmentServiceJsonLd(subsidy);
     const breadcrumbJsonLd = generateBreadcrumbJsonLd(subsidy);
+    const contentSectionsData = getContentSections(subsidy.id);
 
     return (
         <main className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
@@ -267,6 +278,30 @@ export default function SubsidyPage({ params }: Props) {
                         </Link>
                     </div>
                 </div>
+
+                {/* Extended Guide Sections */}
+                {contentSectionsData.length > 0 && (
+                    <article className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100 space-y-8">
+                        {contentSectionsData
+                            .filter((section) => section.paragraphs.length > 0)
+                            .map((section, idx) => (
+                                <section key={idx} className="space-y-3">
+                                    <h2 className="text-xl font-bold text-gray-900 flex items-center gap-2">
+                                        <span className={`w-1 h-6 rounded-full ${idx % 2 === 0 ? "bg-blue-600" : "bg-indigo-500"}`}></span>
+                                        {section.heading}
+                                    </h2>
+                                    <div className="space-y-3 text-gray-700 leading-relaxed break-keep">
+                                        {section.paragraphs.map((p, pi) => (
+                                            <p key={pi} className="text-[15px]">{p}</p>
+                                        ))}
+                                    </div>
+                                </section>
+                            ))}
+                        <div className="pt-4 border-t border-gray-100 text-sm text-gray-500 leading-relaxed">
+                            본 페이지는 일반 안내 목적이며, 최신 기준·금액은 반드시 공식 사이트 공고로 확인하세요. 게시 내용의 사실 관계는 공식 공고 기준으로 업데이트됩니다.
+                        </div>
+                    </article>
+                )}
 
                 {/* FAQ Section */}
                 <section className="bg-white rounded-2xl shadow-sm p-8 border border-gray-100">
